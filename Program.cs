@@ -40,6 +40,10 @@ namespace InTheBag
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            app.MapControllerRoute(
+                name: "genie2",
+                pattern: "{controller=Genie}/{action=Create2}/{GenieName?}/{Age?}/{WishesGranted?}");
+
             app.Run();
         }
     }
